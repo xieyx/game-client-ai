@@ -1,0 +1,45 @@
+# Game AI Client Configuration
+
+# Server configuration
+server:
+  # Game server address
+  address: "localhost:8080"
+  # Communication protocol (http or grpc)
+  protocol: "http"
+  # API endpoint for game state
+  game_state_endpoint: "/api/game/state"
+  # API endpoint for making moves
+  make_move_endpoint: "/api/game/move"
+
+# AI configuration
+ai:
+  # AI strategy to use (minimax, mcts, random, etc.)
+  strategy: "minimax"
+  # AI difficulty level (1-10)
+  difficulty: 5
+  # Time limit for AI decision making (in seconds)
+  time_limit: 30
+  # Enable AI learning
+  enable_learning: true
+
+# Logging configuration
+logging:
+  # Log level (debug, info, warn, error)
+  level: "info"
+  # Log file path
+  file: "game-client-ai.log"
+  # Maximum log file size (MB)
+  max_size: 10
+  # Maximum number of log files to keep
+  max_backups: 3
+  # Maximum age of log files to keep (days)
+  max_age: 7
+
+# Performance monitoring
+monitoring:
+  # Enable performance monitoring
+  enabled: true
+  # Metrics collection interval (seconds)
+  interval: 60
+  # Metrics server address
+  metrics_address: "localhost:9090"
